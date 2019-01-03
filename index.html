@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Buffer</title>
+  </head>
+  <body>
+    <h1 class="page-title">Array Buffer Check</h1>
+    <script type="text/javascript">
+      (function () {
+        var xhr = new XMLHttpRequest()
+        xhr.responseType = "arraybuffer"
+        xhr.open("get", "/fake/data")
+        xhr.send()
+        xhr.abort()
+      }())
+    </script>
+  </body>
+</html>
